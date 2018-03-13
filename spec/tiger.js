@@ -38,4 +38,19 @@ describe('Tiger class functionality', function() {
         expect(tiger.energy).to.equal(15);
     })
 
+    /* New properties and methods */
+
+    it('should have an increaseCount method', function() {
+        expect(tiger.increaseCount).to.be.a('function');
+    });
+
+    it('should have a count property set to 1', function() {
+        expect(tiger.count).to.equal(1);
+    });
+
+    it('should increase count by 1', function() {
+        var anotherTiger = new Tiger();
+        expect(tiger.count).to.equal(2);
+    });
+
 });
