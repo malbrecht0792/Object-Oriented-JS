@@ -1,3 +1,5 @@
-var Jungle = function() {
-    this.climate = 'tropical rain forest';
-};
+class Jungle {
+    constructor() {
+        this.climate = 'tropical rain forest';
+    }
+}

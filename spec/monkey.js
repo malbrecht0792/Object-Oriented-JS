@@ -57,17 +57,17 @@ describe('Monkey class functionality', function() {
 
     /* New properties and methods */
 
-    it('should have an increaseCount method', function() {
-        expect(monkey.increaseCount).to.be.a('function');
-    });
+    // it('should have an increaseCount method', function() {
+    //     expect(monkey.increaseCount).to.be.a('function');
+    // });
 
-    it('should have a count property set to 1', function() {
-        expect(monkey.count).to.equal(1);
+    it('should have a numberOfMonkeys property set to 1', function() {
+        expect(Animal.protoype.numberOfMonkeys).to.equal(1);
     });
 
     it('should increase count by 1', function() {
         var anotherMonkey = new Monkey();
-        expect(monkey.count).to.equal(2);
+        expect(Animal.numberOfMonkeys).to.equal(2);
     });
 
     it('should have a play method', function() {

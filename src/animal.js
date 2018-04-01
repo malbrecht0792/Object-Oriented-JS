@@ -1,15 +1,19 @@
-var Animal = function() {
-    this.energy = 10;
-}
+class Animal {
 
-Animal.prototype.sound = function() {
-    this.energy -= 3;
-}
+    constructor () {
+        this.energy = 10;
+        this.numberOfMonkeys = 0;
+    }
 
-Animal.prototype.eatFood = function() {
-    this.energy += 5;
-}
+    sound () {
+        this.energy -= 3;
+    } 
 
-Animal.prototype.sleep = function() {
-    this.energy += 10;
+    eatFood () {
+        this.energy += 5;
+    }
+
+    sleep () {
+        this.energy += 10;
+    }
 }
